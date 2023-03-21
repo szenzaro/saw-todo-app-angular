@@ -1,0 +1,9 @@
+<div class="todo-item">
+    <div>
+        <input type="checkbox" [checked]="todo.state === 'done'">
+        <span>{{ todo.text }}</span>
+        <button (click)="todoService.removeTodo(todo.id)">&times;</button>
+    </div>
+    <!-- <input type="text"
+           value="Editing Todo"> -->
+</div>
